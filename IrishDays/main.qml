@@ -1,4 +1,5 @@
 import QtQuick 2.3
+import QtQuick.Controls 1.4
 import QtQuick.Window 2.2
 
 Window {
@@ -11,6 +12,12 @@ Window {
         onClicked: {
             Qt.quit();
         }
+    }
+
+    Button {
+        id: test
+        text: "testing"
+        onClicked: test.text = "test2"
     }
 
     Text {
